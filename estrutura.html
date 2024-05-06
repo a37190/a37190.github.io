@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho Final</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<button onclick="topFunction()" id="btntop" title="Paracima">Voltar para cima</button>
+	<script>
+		let mybutton = document.getElementById("btntop");
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+				}
+			}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+</script>
+    <header>
+        <h1>TIC-1TIS</br>Projeto Final do Módulo 4 - Aquisição e Tratamento da Imagem</h1>
+    </header>
+
+    <main>
+        <h2>Imagens</h2>
+        <p>Img.1--------VS--------Img.2</p>
+		<img src="imagensor/montanhas.jpg">
+		<img src="imagensed/montanhas2.png" style="width:622px">
+		<p>Img.3--------VS--------Img.4</p>
+		<img src="imagensor/paissagem.jpg" style="width:610px">
+		<img src="imagensed/paissagem2.png" style="width:610px">
+		<p>Img.5--------VS--------Img.6</p>
+		<img src="imagensor/paissagem2.jpg" style="width:610px">
+		<img src="imagensed/paissagem22.png" style="width:610px">
+		<p>Img.7--------VS--------Img.8</p>
+		<img src="imagensor/passaro.jpg" style="width:610px">
+		<img src="imagensed/passaro2.png" style="width:610px">
+		<p>Img.9--------VS--------Img.10</p>
+		<img src="imagensor/pintura.jpg" style="width:620px">
+		<img src="imagensed/pintura2.png" style="width:520px">
+    </main>
+
+    <footer>
+        <p1>Direitos de autor &copy; 2024/2026 - Todos os direitos reservados pelo Vadym</p1>
+    </footer>
+
+</body>
+</html>
